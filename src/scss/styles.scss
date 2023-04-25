@@ -1,0 +1,142 @@
+:root {
+  --bg_main: #BCE1E6;  //#D6DBDF
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --blue: #3173A3;   // #F1C40F;
+  --darkblue: #1F4476;     
+  --orange: #ff8c00;
+  --darkorange: #F56712;
+}
+* {
+  margin: 1px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    //background-color: rgb(01, 90, 100);
+    background: var(--bg_main);
+    color: var(--text_med);
+    font: 1rem/1.3 "Roboto", sans-serif;
+}
+
+#logo {
+  border-radius: 20px;
+  height: 70px;
+  width: 100px;
+  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.23);
+}
+#title {
+  size: 3em;
+  color: var(--darkblue);
+  font-weight: bold;
+}
+#container {
+    margin: 15px;
+    padding: 15px;
+}
+
+#cityName {
+  margin-left: 10%;
+  color: var(--text_med);
+  font-size: 1rem;
+  border-radius: 10px;
+  border-color: var(--bg_main);
+  padding: 8px;
+  width: 50%;
+  outline: none;
+}
+
+#results {
+    border-radius: 5%;
+    display: grid;
+    grid-gap: 32px 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#results .city {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--blue);
+  margin-top: 15px;
+  justify-content: center;
+  text-align: center;
+  width: 187px;
+  height: 227px;
+  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.23);
+  }
+
+#results .cityName {
+  text-transform: capitalize;
+  color: var(--darkblue);
+  font-size: 1rem;
+  font-weight: bold;
+  //border-color: var(--text_med);
+  border-bottom: solid;
+}
+
+#results .temp {
+  font-size: 2rem;
+  color: var(--text_light);
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+#results .weatherImg {
+  height: auto;
+  width: auto;
+}
+
+#results .pDesc {
+  text-transform: capitalize;
+  color: var(--text_light);
+  font-size: 1rem;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#results .cityButton {
+  font-size: 0.7rem;
+  background: var(--orange);
+  color: var(--darkblue);
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  border-radius: 5px;
+  border-color: var(--orange);
+  padding: 2px 2px;
+  margin-top: 5px;
+}
+
+#results .cityButton:hover {
+  background: var(--darkorange);
+  color: var(--text_light);
+}
+
+#getTemp {
+  background: var(--blue);
+  color: var(--text_light);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 15px 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+  border-color: var(--bg_main);
+  outline: none;
+}
+#getTemp:hover {
+  background: var(--darkblue);
+}
+ 
+.bad-input {
+  border: 1px solid red;
+}
+
+.bad-input::placeholder {
+  color: red;
+}
